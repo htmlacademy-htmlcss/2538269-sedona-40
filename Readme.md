@@ -2,6 +2,7 @@
 
 * Студент: [Екатерина Ларионова](https://up.htmlacademy.ru/htmlcss/40/user/2538269).
 * Наставник: `Неизвестно`.
+* Сайт: https://katerinalarionova.github.io/2538269-sedona-40/.
 
 ---
 
