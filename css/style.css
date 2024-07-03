@@ -1,0 +1,606 @@
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+/*header*/
+.page-header {
+  padding: 0 70px;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  width: 138px;
+  margin-right: 30px;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.header-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 555px;
+  list-style-type: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header-user-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 310px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+
+}
+/*секция Hero*/
+.hero {
+  background-color: #83B3D333;
+  background-image: url("../images/background/index-background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 51px 0 82px;
+}
+
+.hero::after {
+  content: url("../images/background/devaider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: absolute;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-title,
+.service-title,
+.booking-title,
+.subscribe-title,
+.catalog-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*advantages*/
+
+.advantages-container {
+  display: flex;
+  padding: 64px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.advantages-title {
+  width: 620px;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#83B3D31F;
+  width: 400px;
+  min-height: 385px;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 102px 85px;
+}
+
+.advantages-item:nth-child(3) {
+  background-color: #83B3D333;
+}
+
+.advantages-wide-item {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 400px 800px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  width: 1200px;
+}
+
+.advantages-item-container {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 102px 85px;
+}
+
+.advantages-item:nth-child(3) {
+  background-color: #83B3D333;
+}
+
+.advantages-item-title,
+.service-item-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.advantages-item-title {
+  margin-bottom: 30px;
+}
+
+.light-title {
+  color: #FFFFFF;
+}
+
+.advantages-item-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin: 31px 0 0;
+  padding: 0;
+
+}
+
+/*service*/
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 505px;
+  padding: 96px 0;
+}
+
+.service-list {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+  padding: 80px 85px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.service-item:nth-child(2) {
+  background-color: #FFFFFF;
+}
+
+.service-item-description {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.house::after {
+  content: url("../images/icon/house.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.food::after {
+  content: url("../images/icon/food.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.box::after {
+  content: url("../images/icon/box.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+/*booking*/
+.booking {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 592px;
+}
+
+.booking-title {
+  margin-bottom: 20px;
+}
+
+.description-booking {
+  margin-bottom: 54px;
+}
+
+/*subscribe*/
+.picture-subscribe {
+  background-color: #82B3D3;
+  background-image: url("../images/background/subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 0 104px;
+}
+
+.subscribe-container {
+  width: 475px;
+  margin-bottom: 54px;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+}
+
+/*footer*/
+.main-footer {
+  padding: 40px 0 30px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list {
+  width: 142px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.telephone {
+  width: 720px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/*Страница каталога*/
+/*filter*/
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 35px 70px 70px;
+  background-color: #82B3D3;
+  background-image: url("../images/background/filter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.filter-header {
+
+}
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-group-container {
+  display: flex;
+  gap: 70px;
+}
+.filter-price-container {
+  display: flex;
+  gap: 70px;
+
+}
+
+.filter-group {
+  width: 150px;
+}
+
+.filter-price {
+  width: 288px;
+}
+
+.button-container {
+  width: 191px;
+}
+
+.price-button {
+  margin:0;
+  padding: 0;
+}
+
+.filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-group-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.price-number {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+
+}
+.infrastructure-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.control-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+
+/*catalog*/
+.catalog {
+  width: 1200px;
+  padding: 0 70px;
+  margin-bottom: 40px;
+}
+
+.catalog-header {
+  margin:50px 0 40px;
+}
+
+.catalog-sorting {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.catalog-header-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 340px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+}
+
+.card-image {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+}
+
+.rating-point {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+}
+
+/*pagination*/
+
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-points {
+  color: #000000;
+  background-color: inherit;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}

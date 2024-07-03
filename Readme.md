@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Ларионова](https://up.htmlacademy.ru/htmlcss/40/user/2538269).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Шабалин] ( https://htmlacademy.ru/profile/id1057153)
 * Сайт: https://katerinalarionova.github.io/2538269-sedona-40/.
 
 ---
