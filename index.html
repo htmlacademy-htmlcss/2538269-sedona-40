@@ -10,12 +10,12 @@
 <div class="container">
   <header class="page-header">
     <a class="logo" href="index.html" aria-current="page">
-      <img src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
     </a>
     <nav class="header-navigation">
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a class="navigation-link current-link" href="index.html" aria-current="page">Главная</a>
+          <a class="navigation-link main-current-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="header-navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
@@ -56,7 +56,7 @@
     <div class="page-container">
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="main-logo" src="images/content/welcome.svg" width="458" height="352"
+        <img class="image-logo" src="images/content/welcome.svg" width="458" height="352"
              alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
       <section class="advantages">
@@ -72,18 +72,18 @@
               <h3 class="advantages-item-title light-title">Настоящий городок</h3>
               <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="images/content/photo-1.jpg" width="800" height="385" alt="Улица Седоны">
+            <img class="advantages-image" src="images/content/photo-1.jpg" width="800" height="385" alt="Улица Седоны">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
             <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item item-blue-colored">
-            <h3 class="advantages-item-title">Красивая дорога</h3>
+            <h3 class="advantages-item-title">Красивая <br> дорога</h3>
             <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-item-title">Мало туристов</h3>
+            <h3 class="advantages-item-title">Мало</br>туристов</h3>
             <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-wide-item">
@@ -91,7 +91,7 @@
               <h3 class="advantages-item-title light-title">Там есть мост дьявола</h3>
               <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
-            <img src="images/content/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
+            <img class="advantages-image" src="images/content/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -104,17 +104,18 @@
           <li class="service-item">
             <div class="house"></div>
             <h3 class="service-item-title">Жильё</h3>
-            <p class="service-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="service-item-description">Рекомендуем пожить в&nbsp;настоящем мотеле,
+              всё&nbsp;как&nbsp;в кино!</p>
           </li>
           <li class="service-item item-light">
             <div class="food"></div>
             <h3 class="service-item-title">Еда</h3>
-            <p class="service-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="service-item-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
           </li>
           <li class="service-item">
             <div class="box"></div>
             <h3 class="service-item-title">Сувениры</h3>
-            <p class="service-item-description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="service-item-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -208,6 +209,37 @@
       </a>
     </div>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="modal-group">
+            <label class="date-reserve">Дата заезда:
+            <input class="form-field" type="text"  name="date-reserve" placeholder="27 апреля 2020">
+            </label>
+          </p>
+          <p class="modal-group">
+            <label class="date-reserve">Дата выезда:
+              <input class="form-field" type="text"  name="date" placeholder="1 сентября 2023">
+            </label>
+          </p>
+          <p class="modal-group">
+            <label class="date-reserve">Взрослые:
+              <input class="form-field" type="number"  name="oldest" placeholder="2">
+            </label>
+            <label class="date-reserve">Дети:
+              <input class="form-field" type="number"  name="children" placeholder="2">
+            </label>
+          </p>
+          <button class=" button modal-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </div>
 </body>
 </html>

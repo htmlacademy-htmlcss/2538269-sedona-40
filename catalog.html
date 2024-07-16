@@ -10,7 +10,7 @@
 <div class="container">
   <header class="page-header">
     <a class="logo" href="index.html" aria-current="page">
-      <img src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
     </a>
     <nav class="header-navigation">
       <ul class="header-navigation-list">
@@ -21,7 +21,7 @@
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link current-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link catalog-current-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="header-user-list">
@@ -76,18 +76,24 @@
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="swimming" checked>
-                    Бассейн</label>
+                    <input class="control-input visually-hidden" type="checkbox" name="swimming" checked>
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Бассейн</span>
+                  </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка</label>
+                    <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Парковка</span>
+                  </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi</label>
+                    <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Wi-Fi</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -96,17 +102,23 @@
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="question-one" value="hotel" checked>Гостиница
+                    <input class="control-input visually-hidden" type="radio" name="question-one" value="hotel" checked>
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Гостиница</span>
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="question-one" value="motel">Мотель
+                    <input class="control-input visually-hidden" type="radio" name="question-one" value="motel">
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Мотель</span>
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="question-one" value="apartments">Апартаменты
+                    <input class="control-input visually-hidden" type="radio" name="question-one" value="apartments">
+                    <span class="decoration-mark"></span>
+                    <span class="control-name">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -118,12 +130,21 @@
               <div class="price-container">
                 <label class="price">
                   <span class="price-value">от</span>
-                  <input class="from" type="number" name="from" value="0">
+                  <input class="price-input-from" type="number" name="from" value="0">
                 </label>
                 <label class="price">
                   <span class="price-value">до</span>
-                  <input class="to" type="number" name="to" value="9000">
+                  <input class="price-input-to" type="number" name="to" value="9000">
                 </label>
+              </div>
+              <legend class="visually-hidden">Ренджер цены</legend>
+              <div class="range">
+                <div class="rang-scale">
+                  <div class="rang-bar" style="width: 226px;">
+                    <button type="button" class="rang-toggle toggle-min"></button>
+                    <button type="button" class="rang-toggle toggle-max"></button>
+                  </div>
+                </div>
               </div>
             </fieldset>
             <div class="button-container">
@@ -268,7 +289,7 @@
       </section>
       <section class="subscribe">
         <div class="subscribe-container">
-          <h2 class="subscribe-title light-title">Подпишитесь на рассылку</h2>
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
