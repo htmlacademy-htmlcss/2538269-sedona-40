@@ -221,6 +221,12 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-link:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
 .button {
   display: block;
   font-family: "PT Sans", sans-serif;
@@ -618,7 +624,7 @@ body {
 }
 
 .telephone {
-  width: 340px;
+  width: 348px;
   font-family: "PT Sans", sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -635,6 +641,10 @@ body {
 
 .telephone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link {
+  padding: 0 5px;
 }
 
 .htmlacademy {
@@ -878,7 +888,6 @@ body {
   background-color: #ffffff;
 }
 
-
 .rang-toggle {
   position: absolute;
   width: 20px;
@@ -1013,15 +1022,14 @@ body {
 /*catalog*/
 .catalog {
   width: 1200px;
-  padding: 0 70px;
-  margin-bottom: 60px;
+  padding: 50px 70px 60px;
 }
 
 .catalog-header {
   display: flex;
   gap: 70px;
   width: 1060px;
-  margin: 50px 0 40px;
+  margin: 0 0 40px;
 }
 
 .catalog-title {
@@ -1411,7 +1419,6 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   background-position: center;
-  background-color: #f2f2f2;
   right: 0;
   margin-right: 20px;
 }
@@ -1421,7 +1428,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  width: 440px;
+  min-width: 440px;
   border: none;
   border-radius: 4px;
   padding: 12px 45px 12px 20px;
@@ -1634,4 +1641,25 @@ body {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
   outline: none;
+}
+
+.button:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
+.control:has(:disabled) {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.catalog-sorting:disabled {
+  opacity: 0.6;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: none;
 }
