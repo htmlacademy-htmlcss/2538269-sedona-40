@@ -47,6 +47,11 @@ body {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -71,6 +76,11 @@ body {
 .logo:hover {
   opacity: 0.7;
 }
+
+.logo:active {
+  opacity: 0.3;
+}
+
 
 .header-logo {
   display: block;
@@ -151,8 +161,7 @@ body {
   background-color: #f2f2f2;
 }
 
-/*header*/
-
+/*HEADER*/
 .search-icon,
 .hart-icon {
   display: block;
@@ -259,7 +268,7 @@ body {
   flex-grow: 1;
 }
 
-/*секция Hero*/
+/*HERO*/
 .hero {
   background-color: rgba(131, 179, 211, 0.2);
   background-image: url("../images/background/index-background.jpg");
@@ -284,6 +293,8 @@ body {
 .image-logo {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .advantages-title,
@@ -312,8 +323,7 @@ body {
   padding: 0;
 }
 
-/*advantages*/
-
+/*ADVANTAGES*/
 .advantages-container {
   display: flex;
   padding: 69px 0 90px;
@@ -383,6 +393,8 @@ body {
 
 .advantages-image {
   display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .advantages-item-title,
@@ -427,7 +439,7 @@ body {
   padding: 0;
 }
 
-/*service*/
+/*SERVICE*/
 .service {
   display: flex;
   flex-direction: column;
@@ -497,7 +509,7 @@ body {
   height: 73px;
 }
 
-/*booking*/
+/*BOOKING*/
 .booking {
   display: flex;
   flex-direction: column;
@@ -533,7 +545,7 @@ body {
   text-transform: uppercase;
 }
 
-/*subscribe*/
+/*SUBSCRIBE*/
 .picture-subscribe {
   background-color: #82b3d3;
   background-image: url("../images/background/subscribe.jpg");
@@ -593,7 +605,6 @@ body {
 }
 
 /*FOOTER*/
-
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -678,8 +689,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/*Страница каталога*/
-
+/*СТРАНИЦА CATALOG*/
 .catalog-current-link::before {
   position: absolute;
   content: " ";
@@ -688,7 +698,7 @@ body {
   bottom: -1px;
 }
 
-/*filter*/
+/*FILTER*/
 .filter {
   display: flex;
   flex-direction: column;
@@ -1041,7 +1051,7 @@ body {
   opacity: 0.3;
 }
 
-/*catalog*/
+/*CATALOG*/
 .catalog {
   width: 1200px;
   padding: 50px 70px 60px;
@@ -1247,7 +1257,7 @@ body {
   text-transform: uppercase;
 }
 
-/*pagination*/
+/*PAGINATION*/
 .pagination {
   display: flex;
   flex-wrap: wrap;
@@ -1331,7 +1341,6 @@ body {
 }
 
 /*MODAL CONTAINER*/
-
 .modal-container {
   display: flex;
   position: fixed;
