@@ -968,7 +968,7 @@ img {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .price-form {
@@ -1736,4 +1736,3 @@ img {
 .invalid {
   color: #ff5757;
 }
-
