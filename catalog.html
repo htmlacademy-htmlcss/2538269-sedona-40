@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
   <header class="page-header" data-test="header">
-    <a class="logo" href="index.html" aria-current="page">
-      <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-    </a>
     <nav class="header-navigation">
+      <a class="logo" href="index.html" aria-current="page">
+        <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      </a>
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+          <a class="navigation-link main-current-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
+          <a class="navigation-link" href=#>О Седоне</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link catalog-current-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="header-user-list">
@@ -46,10 +46,8 @@
             <span class="count">12</span>
           </a>
         </li>
-        <li class="header-user-button">
-          <a class="button-link header-button" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <a class="button-link header-button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-container" data-test="main">
@@ -330,7 +328,8 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+             rel="noreferrer noopener">
             <svg class="social-icon" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
