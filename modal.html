@@ -2,26 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/logo-group/favicon.png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <div class="container">
   <header class="page-header" data-test="header">
-    <a class="logo" href="index.html" aria-current="page">
-      <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-    </a>
     <nav class="header-navigation">
+      <a class="logo" href="index.html" aria-current="page">
+        <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      </a>
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a class="navigation-link main-current-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link" href="about.html" target="_blank" rel="noreferrer noopener">О Седоне</a>
+          <a class="navigation-link" href=#>О Седоне</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link" href="catalog.html" target="_blank" rel="noreferrer noopener">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="header-user-list">
@@ -46,10 +46,8 @@
             <span class="count">12</span>
           </a>
         </li>
-        <li class="header-user-button">
-          <a class="button-link header-button" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <a class="button-link header-button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-container" data-test="main">
@@ -169,7 +167,8 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+             rel="noreferrer noopener">
             <svg class="social-icon" aria-hidden="true" focusable="false" width="22" height="17" viewBox="0 0 22 17"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -213,7 +212,7 @@
   </footer>
   <div class="modal-container" data-test="modal">
     <div class="modal modal-auth modal-show">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
         <svg class="modal-cross" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"
              viewBox="0 0 15 15">

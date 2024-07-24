@@ -2,26 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="images/logo-group/favicon.png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
   <header class="page-header" data-test="header">
-    <a class="logo" href="index.html" aria-current="page">
-      <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-    </a>
     <nav class="header-navigation">
+      <a class="logo" href="index.html" aria-current="page">
+        <img class="header-logo" src="images/logo-group/logo.svg" width="140" height="70" alt="Логотип города Седона">
+      </a>
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
-          <a class="navigation-link" href="index.html" target="_blank" rel="noreferrer noopener" aria-current="page">Главная</a>
+          <a class="navigation-link main-current-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
+          <a class="navigation-link" href=#>О Седоне</a>
         </li>
         <li class="header-navigation-item">
-          <a class="navigation-link catalog-current-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="header-user-list">
@@ -46,10 +46,8 @@
             <span class="count">12</span>
           </a>
         </li>
-        <li class="header-user-button">
-          <a class="button-link header-button" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <a class="button-link header-button" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-container" data-test="main">
@@ -185,7 +183,7 @@
         </header>
         <ul class="catalog-cards">
           <li class="card">
-            <a class="card-link" href="catalog.html" target="_blank" rel="noreferrer noopener">
+            <a class="card-link" href="catalog.html">
               <img class="card-image" src="images/cards/hotel-1.jpg" width="300" height="212"
                    alt="Ущелье со звездным небом.">
               <h3 class="card-title">Amara Resort & Spa</h3>
@@ -206,7 +204,7 @@
             </div>
           </li>
           <li class="card">
-            <a class="card-link" href="catalog.html" target="_blank" rel="noreferrer noopener">
+            <a class="card-link" href="catalog.html">
               <img class="card-image" src="images/cards/hotel-2.jpg" width="300" height="212"
                    alt="Вид издалека на скалистые горы.">
               <h3 class="card-title">Villas at Poco Diablo</h3>
@@ -227,7 +225,7 @@
             </div>
           </li>
           <li class="card">
-            <a class="card-link" href="catalog.html" target="_blank" rel="noreferrer noopener">
+            <a class="card-link" href="catalog.html">
               <img class="card-image" src="images/cards/hotel-3.jpg" width="300" height="212"
                    alt="Скалистые горы в солнечную погоду.">
               <h3 class="card-title">Desert Quail Inn</h3>
@@ -248,7 +246,7 @@
             </div>
           </li>
           <li class="card">
-            <a class="card-link" href="catalog.html" target="_blank" rel="noreferrer noopener">
+            <a class="card-link" href="catalog.html">
               <img class="card-image" src="images/cards/hotel-4.jpg" width="300" height="212"
                    alt="Вид скал при звездном небе.">
               <h3 class="card-title">GreenTree Inn</h3>
@@ -330,7 +328,8 @@
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+             rel="noreferrer noopener">
             <svg class="social-icon" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18"
                  fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
